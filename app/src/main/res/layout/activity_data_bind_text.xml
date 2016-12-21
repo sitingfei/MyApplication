@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="android.view.View"/>
+        <variable
+            name="been"
+            type="com.liguanjia.myapplication.UserBeen" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="@dimen/q400"
+            android:layout_height="@dimen/q100"
+            android:background="@color/meet_green"
+            android:gravity="center"
+            android:text="@{been.name}"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="@dimen/q400"
+            android:layout_height="@dimen/q100"
+            android:layout_marginTop="@dimen/q30"
+            android:background="@color/meet_remind_green"
+            android:gravity="center"
+            android:text="@{been.age}"
+            android:textColor="@color/white" />
+
+        <View
+            android:visibility="@{been.checked?View.GONE:View.VISIBLE}"
+            android:layout_marginTop="@dimen/q30"
+            android:layout_width="@dimen/q400"
+            android:background="@color/meet_black"
+            android:layout_height="@dimen/q30"/>
+
+
+        <Button
+            
+            android:text="切换状态"
+            android:textColor="@color/white"
+            android:background="@color/meet_red"
+            android:layout_marginTop="@dimen/q30"
+            android:layout_width="@dimen/q400"
+            android:layout_height="@dimen/q100" />
+    </LinearLayout>
+</layout>

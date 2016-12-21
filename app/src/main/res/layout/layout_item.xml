@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/q274"
+        >
+
+        <TextView
+            android:id="@+id/tv_delete"
+            android:layout_height="match_parent"
+            android:layout_width="@dimen/q122"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/layout_content"
+            android:text="删 除"
+            android:background="@drawable/btn_click_red_havebackground"
+            android:textColor="#DDFFFFFF"
+            />
+
+        <RelativeLayout
+            android:id="@+id/layout_content"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/q274"
+            android:background="@color/white"
+            android:padding="@dimen/q30">
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
