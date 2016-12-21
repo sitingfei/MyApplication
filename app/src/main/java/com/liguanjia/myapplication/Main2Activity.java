@@ -44,6 +44,8 @@ public class Main2Activity extends AppCompatActivity {
      */
     private void initFraments() {
 
+        HomeFragment fragment2 = new HomeFragment();
+
         HomeFragment homeFragment = new HomeFragment();
         SecendFragment secendFragment = new SecendFragment();
         ThirdFragment thirdFragment = new ThirdFragment();
