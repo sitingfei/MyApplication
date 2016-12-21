@@ -39,6 +39,9 @@ public class Main2Activity extends AppCompatActivity {
         btns[0].setSelected(true);
     }
 
+    /**
+     * 初始化fragment
+     */
     private void initFraments() {
 
         HomeFragment homeFragment = new HomeFragment();
